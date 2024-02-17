@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <div>
+        <ul class="navbar" id="nav1">
+            <li> <a href="home" class="but">Home</a></li>
+            <li> <a href="support" class="but">Support</a></li>
+            <li> <a href="history" class="but">History</a></li>
+        </ul>
+    </div>
+    <div class="book">
+        <h2 style="text-align: center;">Book Your Slot</h2>
+        <div class="container">
+            <form id="booking-form" action="submit_booking.php" method="POST">
+                <div class="form-details">
+                    <span><label style="display: block;">Slot Date</label><input type="date" name="slot" required /></span>
+                    <span><label for="hostel-name" style="display: block; margin-bottom: 5px; margin-top: 10px;">Hostel Name:</label></span>
+                    <select id="hostel-name" name="hostel-name" required>
+                        <option value="" disabled selected>Select your Hostel</option>
+                        <option value="BH1">BH1</option>
+                        <option value="BH2">BH2</option>
+                        <option value="GH2">GH1</option>
+                    </select>
+                    <label for="mobile-number">Mobile Number:</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" required pattern="[0-9]{10}">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="sophie@example.com" required>
+                </div>
+                <a href="./next.html"><button type="submit" class="but">Next</button></a>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('input[type="date"]').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+    </script>
+</body>
+</html>
