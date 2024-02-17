@@ -1,0 +1,322 @@
+/* Apply box-sizing globally to maintain consistent box models */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'spartan', sans-serif;
+    overflow-x: hidden;
+    background-image: url(./images/book.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+h1 {
+    color: black;
+}
+
+
+#nav1{padding-left:780px;}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Adjust alpha value for transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    padding-left:650px;
+    z-index: 2; /* Higher z-index to overlay the background */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    padding: 0 20px;
+    padding-right:50px;
+
+}
+#login{
+ background-color: #bede57;
+}
+#login:hover{
+  background-color: #1e293b;
+  color: #fff;
+}
+#scroll-link{
+ background-color: #bede57;padding: .8rem 1.4rem;
+ white-space: nowrap;
+}
+
+
+.but{
+
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.but:hover {
+  background-color: #1e293b;
+  color: #fff;
+  padding: 0.6rem 1.0rem;
+}
+
+
+.book{
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 1.7rem;
+    font-weight: 600%;
+}
+.container {
+   
+     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* Adjusted width */
+    padding: 50px; /* Adjusted padding */
+    background-color: transparent;
+    border: 1px solid ;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Centering the container */
+}
+
+label {
+    
+    margin-bottom: 10px; /* Adjusted margin */
+    align-items: center; /* Added */
+}
+
+input[type="text"],
+select,
+input[type="tel"],
+input[type="email"],input[type="date"] {
+    width: calc(100% - 10px); /* Adjusted width */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e4e2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2rem; 
+}
+/*testimonial*/
+#testimonial {
+  min-height: 300px; /* Set a fixed height for the testimonial section */
+  max-width: 100%; /* Set a max-width to limit the width of the testimonial section */
+  margin: auto; /* Center the testimonial section horizontally */
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px; 
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center; /* Center text inside the testimonial section */
+}
+
+  
+  .silde-content{
+    margin: 0 40px;
+  }
+  .card{
+    width: 310px;
+    border-radius: 25px;
+    background-color:#edc4b3;
+  
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 13px;
+  
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px 0 25px;
+  
+  }
+  
+  .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image is properly clipped within the circular border */
+  }
+  
+  .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* This ensures the image itself is also circular */
+    border: 4px solid #555860;
+  }
+  .name{
+    font-size: 18px;
+  font-weight: 600;
+  color: #333;
+    
+  
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .button{
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #555860;
+    border-radius: 7px;
+    margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    
+  }
+  .button:hover{
+    background-color: #079334;
+  }
+ 
+  .steps{
+    font-size: 20px;
+    margin-left: 100px;
+  
+  }
+  
+  .swiper-container {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.swiper-slide {
+    width: calc((100% - 80px) / 3); /* Adjusted width for three slides */
+   margin-right: 20px;
+   margin-left: 35px;
+    float: left; 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  
+}
+
+.input-wrapper label {
+  margin-bottom: 5px; 
+}
+.input-wrapper label {
+  font-size: 20px; /* Adjust label font size */
+}
+
+.input-wrapper input[type="time"] {
+  font-size: 18px; /* Adjust input font size */
+  height: 30px;
+}
+/*confirmation page*/
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.confirmation {
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color:transparent;
+  font-size: 30px;
+}
+
+.confirmation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions button {
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #555860;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: green;
+}
